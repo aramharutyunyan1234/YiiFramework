@@ -230,7 +230,7 @@ div.search-form
 
 
 /*//////////////////////////////////////*/
-.remove_column{
+.remove_column, .add_column{
 	cursor: pointer;
 	float: right;
 }

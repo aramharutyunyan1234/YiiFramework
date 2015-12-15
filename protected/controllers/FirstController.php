@@ -34,6 +34,27 @@ class FirstController extends Controller
 		return $model;
 	}
 
+	public function actionCreate()
+	{
+		$model=new Migration();
+
+
+		//
+
+		if(isset($_POST['test']))
+		{
+
+			$add = $model->add($_POST['test']);
+			$this->redirect('index');
+		}
+	}
+
+
+
+
+
+
+
 
 
 }

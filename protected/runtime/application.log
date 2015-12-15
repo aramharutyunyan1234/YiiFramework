@@ -122,3 +122,487 @@ REQUEST_URI=/Yiiframework/index.php?r=first/delete
 in C:\xampp\htdocs\Yiiframework\protected\models\Migration.php (113)
 in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (19)
 in C:\xampp\htdocs\Yiiframework\index.php (13)
+2015/12/15 07:48:56 [error] [exception.CException] exception 'CException' with message 'FirstController cannot find the requested view "create".' in C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#1 C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php(51): CController->render('create', Array)
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\actions\CInlineAction.php(49): FirstController->actionCreate()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#7 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('first/create')
+#8 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Yiiframework\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+HTTP_REFERER=http://localhost/Yiiframework/index.php?r=first/index
+---
+2015/12/15 07:52:10 [error] [exception.CException] exception 'CException' with message 'FirstController cannot find the requested view "create".' in C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#1 C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php(54): CController->render('create', Array)
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\actions\CInlineAction.php(49): FirstController->actionCreate()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#7 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('first/create')
+#8 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Yiiframework\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+HTTP_REFERER=http://localhost/Yiiframework/index.php?r=first/index
+---
+2015/12/15 07:53:22 [error] [exception.CException] exception 'CException' with message 'FirstController cannot find the requested view "create".' in C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#1 C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php(54): CController->render('create', Array)
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\actions\CInlineAction.php(49): FirstController->actionCreate()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#7 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('first/create')
+#8 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Yiiframework\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+HTTP_REFERER=http://localhost/Yiiframework/index.php?r=first/index
+---
+2015/12/15 07:53:23 [error] [exception.CException] exception 'CException' with message 'FirstController cannot find the requested view "create".' in C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#1 C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php(54): CController->render('create', Array)
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\actions\CInlineAction.php(49): FirstController->actionCreate()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#7 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('first/create')
+#8 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Yiiframework\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+HTTP_REFERER=http://localhost/Yiiframework/index.php?r=first/index
+---
+2015/12/15 07:53:43 [error] [exception.CException] exception 'CException' with message 'FirstController cannot find the requested view "create".' in C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#1 C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php(54): CController->render('create', Array)
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\actions\CInlineAction.php(49): FirstController->actionCreate()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#7 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('first/create')
+#8 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Yiiframework\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+HTTP_REFERER=http://localhost/Yiiframework/index.php?r=first/index
+---
+2015/12/15 07:55:16 [error] [exception.CException] exception 'CException' with message 'FirstController cannot find the requested view "create".' in C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#1 C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php(54): CController->render('create', Array)
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\actions\CInlineAction.php(49): FirstController->actionCreate()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#7 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('first/create')
+#8 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Yiiframework\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+HTTP_REFERER=http://localhost/Yiiframework/index.php?r=first/index
+---
+2015/12/15 07:56:15 [error] [exception.CException] exception 'CException' with message 'FirstController cannot find the requested view "create".' in C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#1 C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php(54): CController->render('create', Array)
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\actions\CInlineAction.php(49): FirstController->actionCreate()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#7 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('first/create')
+#8 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Yiiframework\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+HTTP_REFERER=http://localhost/Yiiframework/index.php?r=first/index
+---
+2015/12/15 08:27:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('first/view')
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Yiiframework\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Yiiframework/index.php?r=first/view&id=5
+HTTP_REFERER=http://localhost/Yiiframework/index.php?r=first/index
+---
+2015/12/15 08:28:25 [error] [exception.CException] exception 'CException' with message 'FirstController cannot find the requested view "create".' in C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#1 C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php(57): CController->render('create', Array)
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\actions\CInlineAction.php(49): FirstController->actionCreate()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#7 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('first/create')
+#8 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Yiiframework\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+HTTP_REFERER=http://localhost/Yiiframework/index.php?r=first/index
+---
+2015/12/15 08:28:51 [error] [exception.CException] exception 'CException' with message 'FirstController cannot find the requested view "create".' in C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#1 C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php(57): CController->render('create', Array)
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\actions\CInlineAction.php(49): FirstController->actionCreate()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#7 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('first/create')
+#8 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Yiiframework\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+HTTP_REFERER=http://localhost/Yiiframework/index.php?r=first/index
+---
+2015/12/15 08:32:44 [warning] [application] Failed to set unsafe attribute "add" of "Migration".
+in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (47)
+in C:\xampp\htdocs\Yiiframework\index.php (13)
+2015/12/15 08:32:44 [error] [exception.CException] exception 'CException' with message 'FirstController cannot find the requested view "create".' in C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#1 C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php(57): CController->render('create', Array)
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\actions\CInlineAction.php(49): FirstController->actionCreate()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#7 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('first/create')
+#8 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Yiiframework\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+HTTP_REFERER=http://localhost/Yiiframework/index.php?r=first/index
+---
+2015/12/15 08:35:57 [error] [exception.CException] exception 'CException' with message 'FirstController cannot find the requested view "create".' in C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#1 C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php(58): CController->render('create', Array)
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\actions\CInlineAction.php(49): FirstController->actionCreate()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#7 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('first/create')
+#8 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Yiiframework\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+HTTP_REFERER=http://localhost/Yiiframework/index.php?r=first/index
+---
+2015/12/15 08:47:38 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\Yiiframework\protected\models\Migration.php:117)
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): FirstController->runAction()
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): FirstController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): FirstController->run()
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\Yiiframework\index.php(13): CWebApplication->run()
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+in C:\xampp\htdocs\Yiiframework\protected\models\Migration.php (117)
+in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (47)
+in C:\xampp\htdocs\Yiiframework\index.php (13)
+2015/12/15 08:47:42 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\Yiiframework\protected\models\Migration.php:117)
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): FirstController->runAction()
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): FirstController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): FirstController->run()
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\Yiiframework\index.php(13): CWebApplication->run()
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+in C:\xampp\htdocs\Yiiframework\protected\models\Migration.php (117)
+in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (47)
+in C:\xampp\htdocs\Yiiframework\index.php (13)
+2015/12/15 08:48:07 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\Yiiframework\protected\models\Migration.php:117)
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): FirstController->runAction()
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): FirstController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): FirstController->run()
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\Yiiframework\index.php(13): CWebApplication->run()
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+in C:\xampp\htdocs\Yiiframework\protected\models\Migration.php (117)
+in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (47)
+in C:\xampp\htdocs\Yiiframework\index.php (13)
+2015/12/15 08:48:12 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\Yiiframework\protected\models\Migration.php:117)
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): FirstController->runAction()
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): FirstController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): FirstController->run()
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\Yiiframework\index.php(13): CWebApplication->run()
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+in C:\xampp\htdocs\Yiiframework\protected\models\Migration.php (117)
+in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (47)
+in C:\xampp\htdocs\Yiiframework\index.php (13)
+2015/12/15 08:49:59 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\Yiiframework\protected\models\Migration.php:117)
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): FirstController->runAction()
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): FirstController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): FirstController->run()
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\Yiiframework\index.php(13): CWebApplication->run()
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+in C:\xampp\htdocs\Yiiframework\protected\models\Migration.php (117)
+in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (47)
+in C:\xampp\htdocs\Yiiframework\index.php (13)
+2015/12/15 08:50:20 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\Yiiframework\protected\models\Migration.php:117)
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): FirstController->runAction()
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): FirstController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): FirstController->run()
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\Yiiframework\index.php(13): CWebApplication->run()
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+in C:\xampp\htdocs\Yiiframework\protected\models\Migration.php (117)
+in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (47)
+in C:\xampp\htdocs\Yiiframework\index.php (13)
+2015/12/15 08:50:39 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\Yiiframework\protected\models\Migration.php:117)
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): FirstController->runAction()
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): FirstController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): FirstController->run()
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\Yiiframework\index.php(13): CWebApplication->run()
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+in C:\xampp\htdocs\Yiiframework\protected\models\Migration.php (117)
+in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (47)
+in C:\xampp\htdocs\Yiiframework\index.php (13)
+2015/12/15 08:52:12 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\Yiiframework\protected\models\Migration.php:118)
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): FirstController->runAction()
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): FirstController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): FirstController->run()
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\Yiiframework\index.php(13): CWebApplication->run()
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+in C:\xampp\htdocs\Yiiframework\protected\models\Migration.php (118)
+in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (47)
+in C:\xampp\htdocs\Yiiframework\index.php (13)
+2015/12/15 08:52:29 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\Yiiframework\protected\models\Migration.php:118)
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): FirstController->runAction()
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): FirstController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): FirstController->run()
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\Yiiframework\index.php(13): CWebApplication->run()
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+in C:\xampp\htdocs\Yiiframework\protected\models\Migration.php (118)
+in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (47)
+in C:\xampp\htdocs\Yiiframework\index.php (13)
+2015/12/15 08:53:37 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\Yiiframework\protected\models\Migration.php:118)
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): FirstController->runAction()
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): FirstController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): FirstController->run()
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\Yiiframework\index.php(13): CWebApplication->run()
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+in C:\xampp\htdocs\Yiiframework\protected\models\Migration.php (118)
+in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (47)
+in C:\xampp\htdocs\Yiiframework\index.php (13)
+2015/12/15 08:55:19 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\Yiiframework\protected\models\Migration.php:118)
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): FirstController->runAction()
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): FirstController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): FirstController->run()
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\Yiiframework\index.php(13): CWebApplication->run()
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+in C:\xampp\htdocs\Yiiframework\protected\models\Migration.php (118)
+in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (47)
+in C:\xampp\htdocs\Yiiframework\index.php (13)
+2015/12/15 08:55:39 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\Yiiframework\protected\models\Migration.php:118)
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): FirstController->runAction()
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): FirstController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): FirstController->run()
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\Yiiframework\index.php(13): CWebApplication->run()
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+in C:\xampp\htdocs\Yiiframework\protected\models\Migration.php (118)
+in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (47)
+in C:\xampp\htdocs\Yiiframework\index.php (13)
+2015/12/15 08:56:17 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\Yiiframework\protected\models\Migration.php:118)
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): FirstController->runAction()
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): FirstController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): FirstController->run()
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\Yiiframework\index.php(13): CWebApplication->run()
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+in C:\xampp\htdocs\Yiiframework\protected\models\Migration.php (118)
+in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (47)
+in C:\xampp\htdocs\Yiiframework\index.php (13)
+2015/12/15 09:00:03 [error] [php] Undefined index: test (C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php:46)
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): FirstController->runAction()
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): FirstController->runActionWithFilters()
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): FirstController->run()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\Yiiframework\index.php(13): CWebApplication->run()
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (46)
+in C:\xampp\htdocs\Yiiframework\index.php (13)
+2015/12/15 09:00:07 [error] [php] Undefined index: test (C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php:46)
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): FirstController->runAction()
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): FirstController->runActionWithFilters()
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): FirstController->run()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\Yiiframework\index.php(13): CWebApplication->run()
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (46)
+in C:\xampp\htdocs\Yiiframework\index.php (13)
+2015/12/15 09:09:36 [error] [exception.CException] exception 'CException' with message 'FirstController cannot find the requested view "create".' in C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#1 C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php(59): CController->render('create', Array)
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\actions\CInlineAction.php(49): FirstController->actionCreate()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#7 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('first/create')
+#8 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Yiiframework\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+HTTP_REFERER=http://localhost/Yiiframework/index.php?r=first/index
+---
+2015/12/15 09:15:17 [error] [php] Undefined index: available (C:\xampp\htdocs\Yiiframework\protected\models\Migration.php:121)
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): FirstController->runAction()
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): FirstController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): FirstController->run()
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\Yiiframework\index.php(13): CWebApplication->run()
+REQUEST_URI=/Yiiframework/index.php?r=first/create
+in C:\xampp\htdocs\Yiiframework\protected\models\Migration.php (121)
+in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (48)
+in C:\xampp\htdocs\Yiiframework\index.php (13)
+2015/12/15 10:36:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "first".' in C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(270): CController->missingAction('first')
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): CController->run('first')
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('first/first/ind...')
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Yiiframework\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Yiiframework/first/first/index
+HTTP_REFERER=http://localhost/Yiiframework/first/
+---
+2015/12/15 10:36:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "first".' in C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(270): CController->missingAction('first')
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): CController->run('first')
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('first/first/ind...')
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Yiiframework\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Yiiframework/first/first/index
+HTTP_REFERER=http://localhost/Yiiframework/first/
+---
+2015/12/15 10:36:26 [error] [php] Undefined index: available (C:\xampp\htdocs\Yiiframework\protected\models\Migration.php:121)
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): FirstController->runAction()
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): FirstController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): FirstController->run()
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\Yiiframework\index.php(13): CWebApplication->run()
+REQUEST_URI=/Yiiframework/first/create
+in C:\xampp\htdocs\Yiiframework\protected\models\Migration.php (121)
+in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (46)
+in C:\xampp\htdocs\Yiiframework\index.php (13)
+2015/12/15 10:37:00 [error] [php] Undefined index: available (C:\xampp\htdocs\Yiiframework\protected\models\Migration.php:121)
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): FirstController->runAction()
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): FirstController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): FirstController->run()
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\Yiiframework\index.php(13): CWebApplication->run()
+REQUEST_URI=/Yiiframework/first/create
+in C:\xampp\htdocs\Yiiframework\protected\models\Migration.php (121)
+in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (46)
+in C:\xampp\htdocs\Yiiframework\index.php (13)
+2015/12/15 10:39:29 [error] [php] Undefined index: available (C:\xampp\htdocs\Yiiframework\protected\models\Migration.php:120)
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): FirstController->runAction()
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): FirstController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): FirstController->run()
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\Yiiframework\index.php(13): CWebApplication->run()
+REQUEST_URI=/Yiiframework/first/create
+in C:\xampp\htdocs\Yiiframework\protected\models\Migration.php (120)
+in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (47)
+in C:\xampp\htdocs\Yiiframework\index.php (13)
+2015/12/15 10:39:32 [error] [php] Undefined index: available (C:\xampp\htdocs\Yiiframework\protected\models\Migration.php:120)
+Stack trace:
+#0 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(286): FirstController->runAction()
+#2 C:\xampp\htdocs\Yiiframework\protected\framework\web\CController.php(265): FirstController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(282): FirstController->run()
+#4 C:\xampp\htdocs\Yiiframework\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yiiframework\protected\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\Yiiframework\index.php(13): CWebApplication->run()
+REQUEST_URI=/Yiiframework/first/create
+in C:\xampp\htdocs\Yiiframework\protected\models\Migration.php (120)
+in C:\xampp\htdocs\Yiiframework\protected\controllers\FirstController.php (47)
+in C:\xampp\htdocs\Yiiframework\index.php (13)

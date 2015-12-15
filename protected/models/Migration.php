@@ -110,14 +110,16 @@ class Migration extends CActiveRecord
 		return $select;
 
 	}
-	/*public function delete($id){
-
-		$select = Yii::app()->db->createCommand()
-				->select('*')
-				->from('migration')
-				->queryAll();
-		return $select;
-
-	}*/
+	public function add($data){
+		foreach($data as $key=>$dat){
+			$order_id = $dat['order_id'];
+			$price = $dat['price'];
+			$description = $dat['description'];
+			//$available = $dat['available'];
+			Yii::app()->db->createCommand("INSERT into `migration`(`order_id`,`price`,`description`) VALUES($order_id,$price,$description)")
+			->execute();
+			;
+		}
+	}
 
 }
