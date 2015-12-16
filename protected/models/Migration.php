@@ -90,12 +90,6 @@ class Migration extends CActiveRecord
 		));
 	}
 
-	/**
-	 * Returns the static model of the specified AR class.
-	 * Please note that you should have this exact method in all your CActiveRecord descendants!
-	 * @param string $className active record class name.
-	 * @return Migration the static model class
-	 */
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
@@ -106,20 +100,84 @@ class Migration extends CActiveRecord
 		$select = Yii::app()->db->createCommand()
 				->select('*')
 				->from('migration')
+
 				->queryAll();
 		return $select;
 
 	}
+	public function select_where($order_id){
+
+		$select = Yii::app()->db->createCommand()
+				->select('*')
+				->from('migration')
+				->where("order_id=:order_id",array(':order_id'=>$order_id))
+				->queryAll();
+		return $select;
+	}
+
 	public function add($data){
+
 		foreach($data as $key=>$dat){
 			$order_id = $dat['order_id'];
 			$price = $dat['price'];
 			$description = $dat['description'];
-			//$available = $dat['available'];
-			Yii::app()->db->createCommand("INSERT into `migration`(`order_id`,`price`,`description`) VALUES($order_id,$price,$description)")
+			$available = $dat['available'];
+			Yii::app()->db->createCommand("INSERT into `migration`(`order_id`,`price`,`description`,`available`) VALUES(".$order_id.",".$price.",'".$description."',".$available.")")
 			->execute();
 			;
 		}
 	}
+	public function max_id(){
+
+		$select = Yii::app()->db->createCommand()
+				->select('MAX(order_id) max_id')
+				->from('migration')
+				->queryRow();
+		return $select['max_id']+1;
+	}
+
+	public function select_orders(){
+
+		$orders = Yii::app()->db->createCommand()
+				->select('distinct(migration.order_id) orders')
+				->from('migration')
+				->queryAll();
+		return $orders;
+
+	}
+	public function selectFromId($id){
+
+		$select = Yii::app()->db->createCommand()
+				->select('*')
+				->from('migration')
+				->where("id=:id",array(':id'=>$id))
+				->queryRow();
+		return $select;
+	}
+	public function edit($data,$id){
+		$order_id = $data['order_id'];
+		$description = $data['description'];
+		$price = $data['price'];
+		$available = $data['available'];
+
+		$update = Yii::app()->db->createCommand("UPDATE migration SET `order_id`='".$order_id."',`description`='".$description."',`price`='".$price."',`available`='".$available."' WHERE `id`='".intval($id)."'")
+		->execute();
+
+		return $update;
+	}
+
+	public function edit_orders($new_order_id,$old_order_id){
+		$model = $this->model()->findByAttributes(array('order_id'=>$old_order_id));
+		$model->order_id = $new_order_id;
+		$model->update('order_id');
+//		$update = Yii::app()->db->createCommand()
+//				->update('migration',
+//						array('order_id'=>$new_order_id),
+//						'order_id=:order_id', array(':order_id'=>$old_order_id)
+//				);
+////				->execute();
+//var_dump($update);die;
+	}
+
 
 }

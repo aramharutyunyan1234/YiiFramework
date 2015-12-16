@@ -234,3 +234,6 @@ div.search-form
 	cursor: pointer;
 	float: right;
 }
+.orders_name{
+	float: left;
+}
