@@ -4,14 +4,14 @@ class OrdersController extends Controller
 {
 	public function actionIndex($id=null){
 
-		$oMigration = new Migration();
-		$max_id = $oMigration->max_id();
+		$model = new Orders();
+		$max_id = $model->max_id();
 
 		if(is_numeric($id) || is_null($id)){
 			if(empty($id)){
-				$migr_select = $oMigration->select();
+				$migr_select = $model->select();
 			}else{
-				$migr_select = $oMigration->select_where($id);
+				$migr_select = $model->select_where($id);
 			}
 		}
 		$this->render('index',array('migr_selects'=>$migr_select,'max_id'=>$max_id,'order_id'=>$id));
@@ -19,14 +19,15 @@ class OrdersController extends Controller
 
 	public function actionDelete(){
 
-		$id = $_POST['id'];
+		//$id = $_POST['id'];
+		$id = Yii::app()->request->getPost('id');
 		$this->loadModel($id)->delete();
 		echo 1;die;
 	}
 
 	public function loadModel($id)
 	{
-		$model = Migration::model()->findByPk($id);
+		$model = Orders::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -34,7 +35,8 @@ class OrdersController extends Controller
 
 	public function actionCreate()
 	{
-		$model = new Migration();
+
+		$model = new Orders();
 		if(isset($_POST['test']))
 		{
 			$add = $model->add($_POST['test']);
@@ -44,13 +46,13 @@ class OrdersController extends Controller
 
 	public function actionOrders($order_id=null)
 	{
-		$model = new Migration();
+
+		$model = new Orders();
 		$all_orders = $model->select_orders();
 
 		if(isset($_POST['new_order'])){
 			$new_order_id = $_POST['new_order'];
 			$old_order_id = $_POST['old_order'];
-			//var_dump($new_order_id,$old_order_id);die;z``
 			$model->edit_orders($new_order_id,$old_order_id);
 			die;
 		}
@@ -60,9 +62,8 @@ class OrdersController extends Controller
 
 	public function actionEdit($id)
 	{
-		$model = new Migration();
+		$model = new Orders();
 
-		$description = Yii::app()->request->getPost('description');
 		$order_id = Yii::app()->request->getPost('order_id');
 		$price = Yii::app()->request->getPost('price');
 		$description = Yii::app()->request->getPost('description');

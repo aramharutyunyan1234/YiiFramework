@@ -1,23 +1,23 @@
 <?php
 
 /**
- * This is the model class for table "migration".
+ * This is the model class for table "orders".
  *
- * The followings are the available columns in table 'migration':
+ * The followings are the available columns in table 'orders':
  * @property integer $id
  * @property integer $order_id
  * @property integer $price
  * @property string $description
- * @property integer $available
+ * @property string $available
  */
-class Migration extends CActiveRecord
+class Orders extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'migration';
+		return 'orders';
 	}
 
 	/**
@@ -28,8 +28,9 @@ class Migration extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('order_id, price, available', 'numerical', 'integerOnly'=>true),
+			array('order_id, price', 'numerical', 'integerOnly'=>true),
 			array('description', 'length', 'max'=>255),
+			array('available', 'length', 'max'=>2),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, order_id, price, description, available', 'safe', 'on'=>'search'),
@@ -83,13 +84,19 @@ class Migration extends CActiveRecord
 		$criteria->compare('order_id',$this->order_id);
 		$criteria->compare('price',$this->price);
 		$criteria->compare('description',$this->description,true);
-		$criteria->compare('available',$this->available);
+		$criteria->compare('available',$this->available,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
 	}
 
+	/**
+	 * Returns the static model of the specified AR class.
+	 * Please note that you should have this exact method in all your CActiveRecord descendants!
+	 * @param string $className active record class name.
+	 * @return Orders the static model class
+	 */
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
@@ -99,7 +106,7 @@ class Migration extends CActiveRecord
 
 		$select = Yii::app()->db->createCommand()
 				->select('*')
-				->from('migration')
+				->from('orders')
 
 				->queryAll();
 		return $select;
@@ -109,7 +116,7 @@ class Migration extends CActiveRecord
 
 		$select = Yii::app()->db->createCommand()
 				->select('*')
-				->from('migration')
+				->from('orders')
 				->where("order_id=:order_id",array(':order_id'=>$order_id))
 				->queryAll();
 		return $select;
@@ -122,8 +129,8 @@ class Migration extends CActiveRecord
 			$price = $dat['price'];
 			$description = $dat['description'];
 			$available = $dat['available'];
-			Yii::app()->db->createCommand("INSERT into `migration`(`order_id`,`price`,`description`,`available`) VALUES(".$order_id.",".$price.",'".$description."',".$available.")")
-			->execute();
+			Yii::app()->db->createCommand("INSERT into `orders`(`order_id`,`price`,`description`,`available`) VALUES(".$order_id.",".$price.",'".$description."',".$available.")")
+					->execute();
 			;
 		}
 	}
@@ -131,7 +138,7 @@ class Migration extends CActiveRecord
 
 		$select = Yii::app()->db->createCommand()
 				->select('MAX(order_id) max_id')
-				->from('migration')
+				->from('orders')
 				->queryRow();
 		return $select['max_id']+1;
 	}
@@ -139,8 +146,8 @@ class Migration extends CActiveRecord
 	public function select_orders(){
 
 		$orders = Yii::app()->db->createCommand()
-				->select('distinct(migration.order_id) orders')
-				->from('migration')
+				->select('distinct(orders.order_id) orders')
+				->from('orders')
 				->queryAll();
 		return $orders;
 
@@ -149,7 +156,7 @@ class Migration extends CActiveRecord
 
 		$select = Yii::app()->db->createCommand()
 				->select('*')
-				->from('migration')
+				->from('orders')
 				->where("id=:id",array(':id'=>$id))
 				->queryRow();
 		return $select;
@@ -160,8 +167,8 @@ class Migration extends CActiveRecord
 		$price = $data['price'];
 		$available = $data['available'];
 
-		$update = Yii::app()->db->createCommand("UPDATE migration SET `order_id`='".$order_id."',`description`='".$description."',`price`='".$price."',`available`='".$available."' WHERE `id`='".intval($id)."'")
-		->execute();
+		$update = Yii::app()->db->createCommand("UPDATE orders SET `order_id`='".$order_id."',`description`='".$description."',`price`='".$price."',`available`='".$available."' WHERE `id`='".intval($id)."'")
+				->execute();
 
 		return $update;
 	}
@@ -171,6 +178,7 @@ class Migration extends CActiveRecord
 		$model->order_id = $new_order_id;
 		$model->update('order_id');
 	}
+
 
 
 }
