@@ -35,7 +35,6 @@ class OrdersController extends Controller
 
 	public function actionCreate()
 	{
-
 		$model = new Orders();
 		if(isset($_POST['test']))
 		{

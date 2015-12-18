@@ -66,30 +66,23 @@ foreach($migr_selects as $migr_select){
     });
 
     $( "#orders_form" ).submit(function( event ) {
+        event.preventDefault();
 
         var price = $('.price').val();
         var description = $('.description').val();
-        k=0;
+        var k=1;
         $.each( $('input[type="text"]'), function( key, value ) {
             if($(value).val()==''){
                 $(this).css('border','1px solid red');
-                event.preventDefault();
-                return false;
-            }else{
-                k=1;
-            }
+                k=0;
+            }e
         });
-
         $.each( $('input[type="number"]'), function( key, value ) {
             if($(value).val()==''){
                 $(this).css('border','1px solid red');
-                event.preventDefault();
-                return false;
-            }else{
-                k=1;
+                k=0;
             }
         });
-
         if(k == 1){
             $( "#orders_form" ).submit();
         }
